@@ -63,3 +63,23 @@ export default function Home() {
     </div>
   );
 }
+import Link from "next/link";
+
+export default function Home() {
+  return (
+    <main className="min-h-screen flex flex-col items-center justify-center bg-violet-50 px-6 text-center">
+      <h1 className="text-4xl font-extrabold text-violet-700">
+        Mi Cuaderno de Ideas 💡
+      </h1>
+      <p className="mt-4 text-lg text-gray-600">
+        Tu espacio privado para guardar ideas de contenido.
+      </p>
+      <Link
+        href="/login"
+        className="mt-8 rounded-xl bg-violet-600 px-8 py-4 font-bold text-white"
+      >
+        Entrar →
+      </Link>
+    </main>
+  );
+}
